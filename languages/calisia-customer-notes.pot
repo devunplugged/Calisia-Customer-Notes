@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calisia-customer-notes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-06 08:42+0000\n"
+"POT-Creation-Date: 2021-05-06 10:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -16,7 +16,7 @@ msgstr ""
 "X-Loco-Version: 2.5.0; wp-5.7.1\n"
 "X-Domain: calisia-customer-notes"
 
-#: src/renderer.php:29
+#: src/renderer.php:34
 msgid "Add comment:"
 msgstr ""
 
@@ -40,7 +40,7 @@ msgstr ""
 msgid "Customer trait"
 msgstr ""
 
-#: templates/user-notes.php:6
+#: templates/user-notes.php:7
 msgid "Delete note"
 msgstr ""
 
@@ -64,6 +64,12 @@ msgstr ""
 msgid "Tomasz Boroń"
 msgstr ""
 
-#: src/renderer.php:30
+#. 1: Name of a city 2: ZIP code
+#: src/saver.php:44
+#, php-format
+msgid "User trait changed from %1$s to %2$s."
+msgstr ""
+
+#: src/renderer.php:35
 msgid "Your Comment"
 msgstr ""

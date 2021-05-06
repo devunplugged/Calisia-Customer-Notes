@@ -13,6 +13,7 @@ require_once __DIR__ . '/src/ajax.php';
 require_once __DIR__ . '/src/data.php';
 require_once __DIR__ . '/src/forms.php';
 require_once __DIR__ . '/src/translations.php';
+require_once __DIR__ . '/src/inputs.php';
 
 //add form to user profile page
 //add_action( 'show_user_profile', array($calisia_customer_notes, 'add_customer_notes_form'), 20); //when editing own profile

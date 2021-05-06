@@ -1,1 +1,1 @@
-<?php woocommerce_wp_select($args['client_trait_settings']); ?>
+<?php echo $args['select_input']; ?>

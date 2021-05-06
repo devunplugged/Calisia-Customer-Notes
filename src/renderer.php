@@ -8,7 +8,7 @@ class renderer{
 
     public static function render_note_trait_select($user_id, $template){
         
-        $client_trait_settings = array(
+        $select = inputs::select(array(
             'id'      => '_calisia_user_trait',
             'label'   => __( 'Customer is:', 'calisia-customer-notes' ) . '<br>',
             'options' => array(
@@ -16,23 +16,29 @@ class renderer{
                 'positive'   => __( 'Good', 'calisia-customer-notes' ),
                 'negative' => __( 'Bad', 'calisia-customer-notes' )
             ),
-            'value' => get_user_meta( $user_id, '_calisia_user_trait', true )
+            'value' => get_user_meta( $user_id, '_calisia_user_trait', true ),
+            'class' => 'w-100'
+        ));
+        self::render(
+            $template, 
+            array(
+                "select_input" => $select
+            )
         );
-
-        self::render($template, array("client_trait_settings"=>$client_trait_settings));
     }
 
     public static function render_note_textarea($user_id, $template){
         
-        $client_desc_settings = array(
+        $textarea = inputs::textarea(array(
             'id'          => '_calisia_user_desc',
             'label'       => __( 'Add comment:', 'calisia-customer-notes' ) . '<br>',
             'placeholder' => __( 'Your Comment', 'calisia-customer-notes' ),
             //'desc_tip'    => true,
             //'description' => __( "Wprowadź kod półki na której znajduje się produkt.", "woocommerce" ),
-            'value' => ''
-        );
-        self::render($template, array("client_desc_settings"=>$client_desc_settings));
+            'value' => '',
+            'class' => 'w-100'
+        ));
+        self::render($template, array("textarea_input"=>$textarea));
     }
 
     public static function render_customer_form($user_id, $notes, $user){

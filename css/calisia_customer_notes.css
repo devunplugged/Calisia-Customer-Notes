@@ -26,3 +26,10 @@
 .calisia-customer-note-info{
     border-bottom: 1px dotted #999;
 }
+.calisia-customer-notes{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.w-100{
+    width: 100%;
+}
