@@ -1,0 +1,65 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: calisia-customer-notes\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-05 13:01+0000\n"
+"PO-Revision-Date: 2021-05-05 13:03+0000\n"
+"Last-Translator: \n"
+"Language-Team: Polski\n"
+"Language: pl_PL\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10 >= 2 && n%10<=4 "
+"&&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.0; wp-5.7.1\n"
+"X-Domain: calisia-customer-notes"
+
+#: src/renderer.php:29
+msgid "Add comment:<br>"
+msgstr "Dodaj komentarz:<br>"
+
+#: src/renderer.php:17
+msgid "Bad"
+msgstr "Negatywny"
+
+#. Name of the plugin
+msgid "calisia-customer-notes"
+msgstr ""
+
+#: src/renderer.php:13
+msgid "Customer is:<br>"
+msgstr "Klient jest:<br>"
+
+#: templates/user-form-table.php:1
+msgid "Customer notes"
+msgstr "Notatki o kliencie"
+
+#: templates/user-info.php:1
+msgid "Customer trait"
+msgstr "Cecha klienta"
+
+#: templates/user-notes.php:6
+msgid "Delete note"
+msgstr "Usuń notatkę"
+
+#: src/renderer.php:16
+msgid "Good"
+msgstr "Pozytywny"
+
+#: src/renderer.php:15
+msgid "Neutral"
+msgstr "Neutralny"
+
+#: templates/user-form-table.php:5
+msgid "Our notes"
+msgstr "Nasze spostrzeżenia"
+
+#. Author of the plugin
+msgid "Tomasz Boroń"
+msgstr ""
+
+#: src/renderer.php:30
+msgid "Your Comment"
+msgstr "Nasze komentarze"

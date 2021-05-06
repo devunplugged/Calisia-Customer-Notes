@@ -1,0 +1,28 @@
+.calisia-customer-note{
+    background: #cad1df;
+    padding:10px;
+    position: relative;
+}
+.calisia-customer-note::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-width: 10px 10px 0 0;
+    border-style: solid;
+    border-color: #cad1df transparent;
+}
+.calisia-customer-note-info-bar{
+    padding:10px;
+    color: gray;
+    font-size: 11px;
+}
+.calisia-customer-note-info-bar a{
+    cursor: pointer;
+}
+.calisia-customer-note-info{
+    border-bottom: 1px dotted #999;
+}
