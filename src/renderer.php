@@ -10,7 +10,7 @@ class renderer{
         
         $client_trait_settings = array(
             'id'      => '_calisia_user_trait',
-            'label'   => __( 'Customer is:<br>', 'calisia-customer-notes' ),
+            'label'   => __( 'Customer is:', 'calisia-customer-notes' ) . '<br>',
             'options' => array(
                 'neutral'   => __( 'Neutral', 'calisia-customer-notes' ),
                 'positive'   => __( 'Good', 'calisia-customer-notes' ),
@@ -26,7 +26,7 @@ class renderer{
         
         $client_desc_settings = array(
             'id'          => '_calisia_user_desc',
-            'label'       => __( 'Add comment:<br>', 'calisia-customer-notes' ),
+            'label'       => __( 'Add comment:', 'calisia-customer-notes' ) . '<br>',
             'placeholder' => __( 'Your Comment', 'calisia-customer-notes' ),
             //'desc_tip'    => true,
             //'description' => __( "Wprowadź kod półki na której znajduje się produkt.", "woocommerce" ),

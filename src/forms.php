@@ -3,7 +3,7 @@ namespace calisia_customer_notes;
 
 class forms{
     public static function add_meta_boxes(){
-        add_meta_box( 'calisia-customer-notes', __('Customer description','calisia-customer-notes'), 'calisia_customer_notes\forms::metabox_form', 'shop_order', 'side', 'core' );
+        add_meta_box( 'calisia-customer-notes', __('Notes: Customer','calisia-customer-notes'), 'calisia_customer_notes\forms::metabox_form', 'shop_order', 'side', 'core' );
     }
 
     public static function add_customer_notes_form($user){

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calisia-customer-notes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-05 13:01+0000\n"
-"PO-Revision-Date: 2021-05-05 13:03+0000\n"
+"POT-Creation-Date: 2021-05-06 08:42+0000\n"
+"PO-Revision-Date: 2021-05-06 08:43+0000\n"
 "Last-Translator: \n"
 "Language-Team: Polski\n"
 "Language: pl_PL\n"
@@ -17,20 +17,20 @@ msgstr ""
 "X-Domain: calisia-customer-notes"
 
 #: src/renderer.php:29
-msgid "Add comment:<br>"
-msgstr "Dodaj komentarz:<br>"
+msgid "Add comment:"
+msgstr "Dodaj komentarz:"
 
-#: src/renderer.php:17
+#: src/renderer.php:17 src/data.php:20
 msgid "Bad"
 msgstr "Negatywny"
 
 #. Name of the plugin
 msgid "calisia-customer-notes"
-msgstr ""
+msgstr "calisia-customer-notes"
 
 #: src/renderer.php:13
-msgid "Customer is:<br>"
-msgstr "Klient jest:<br>"
+msgid "Customer is:"
+msgstr "Klient jest:"
 
 #: templates/user-form-table.php:1
 msgid "Customer notes"
@@ -42,23 +42,27 @@ msgstr "Cecha klienta"
 
 #: templates/user-notes.php:6
 msgid "Delete note"
-msgstr "Usuń notatkę"
+msgstr "Usuń notkę"
 
-#: src/renderer.php:16
+#: src/renderer.php:16 src/data.php:21
 msgid "Good"
 msgstr "Pozytywny"
 
-#: src/renderer.php:15
+#: src/renderer.php:15 src/data.php:22
 msgid "Neutral"
 msgstr "Neutralny"
 
+#: src/forms.php:6
+msgid "Notes: Customer"
+msgstr "Notatki: Klient"
+
 #: templates/user-form-table.php:5
 msgid "Our notes"
-msgstr "Nasze spostrzeżenia"
+msgstr "Nasze notatki"
 
 #. Author of the plugin
 msgid "Tomasz Boroń"
-msgstr ""
+msgstr "Tomasz Boroń"
 
 #: src/renderer.php:30
 msgid "Your Comment"

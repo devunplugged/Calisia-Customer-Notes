@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calisia-customer-notes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-05 13:01+0000\n"
+"POT-Creation-Date: 2021-05-06 08:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -17,10 +17,10 @@ msgstr ""
 "X-Domain: calisia-customer-notes"
 
 #: src/renderer.php:29
-msgid "Add comment:<br>"
+msgid "Add comment:"
 msgstr ""
 
-#: src/renderer.php:17
+#: src/renderer.php:17 src/data.php:20
 msgid "Bad"
 msgstr ""
 
@@ -29,7 +29,7 @@ msgid "calisia-customer-notes"
 msgstr ""
 
 #: src/renderer.php:13
-msgid "Customer is:<br>"
+msgid "Customer is:"
 msgstr ""
 
 #: templates/user-form-table.php:1
@@ -44,12 +44,16 @@ msgstr ""
 msgid "Delete note"
 msgstr ""
 
-#: src/renderer.php:16
+#: src/renderer.php:16 src/data.php:21
 msgid "Good"
 msgstr ""
 
-#: src/renderer.php:15
+#: src/renderer.php:15 src/data.php:22
 msgid "Neutral"
+msgstr ""
+
+#: src/forms.php:6
+msgid "Notes: Customer"
 msgstr ""
 
 #: templates/user-form-table.php:5
