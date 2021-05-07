@@ -7,7 +7,6 @@ class renderer{
     }
 
     public static function render_note_trait_select($user_id, $template){
-        
         $select = inputs::select(array(
             'id'      => '_calisia_user_trait',
             'label'   => __( 'Customer is:', 'calisia-customer-notes' ) . '<br>',
@@ -42,6 +41,12 @@ class renderer{
     }
 
     public static function render_customer_form($user_id, $notes, $user){
+
+        if($user_id == 0){
+            self::render('user-deleted');
+            return;
+        }
+
         self::render_note_trait_select($user_id, 'user-notes-trait-select');
         self::render(
             'user-notes',
@@ -63,6 +68,11 @@ class renderer{
     }
 
     public static function render_user_trait($order){
+        if($order->get_customer_id() == 0){
+            self::render('user-deleted');
+            return;
+        }
+
         require_once __DIR__ . '/data.php';
 
         //$trait = get_user_meta( $order->get_customer_id(), '_calisia_user_trait', true );

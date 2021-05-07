@@ -45,4 +45,3 @@ add_action( "wp_ajax_calisia_delete_note", 'calisia_customer_notes\ajax::delete_
 
 //load plugin textdomain
 add_action( 'init', 'calisia_customer_notes\translations::load_textdomain' );
-  

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calisia-customer-notes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-06 10:24+0000\n"
+"POT-Creation-Date: 2021-05-07 07:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -16,11 +16,11 @@ msgstr ""
 "X-Loco-Version: 2.5.0; wp-5.7.1\n"
 "X-Domain: calisia-customer-notes"
 
-#: src/renderer.php:34
+#: src/renderer.php:33
 msgid "Add comment:"
 msgstr ""
 
-#: src/renderer.php:17 src/data.php:20
+#: src/renderer.php:16 src/data.php:20
 msgid "Bad"
 msgstr ""
 
@@ -28,7 +28,7 @@ msgstr ""
 msgid "calisia-customer-notes"
 msgstr ""
 
-#: src/renderer.php:13
+#: src/renderer.php:12
 msgid "Customer is:"
 msgstr ""
 
@@ -40,15 +40,15 @@ msgstr ""
 msgid "Customer trait"
 msgstr ""
 
-#: templates/user-notes.php:7
+#: templates/user-notes.php:8
 msgid "Delete note"
 msgstr ""
 
-#: src/renderer.php:16 src/data.php:21
+#: src/renderer.php:15 src/data.php:21
 msgid "Good"
 msgstr ""
 
-#: src/renderer.php:15 src/data.php:22
+#: src/renderer.php:14 src/data.php:22
 msgid "Neutral"
 msgstr ""
 
@@ -64,12 +64,15 @@ msgstr ""
 msgid "Tomasz Boroń"
 msgstr ""
 
-#. 1: Name of a city 2: ZIP code
-#: src/saver.php:44
+#: templates/user-deleted.php:1
+msgid "User deleted"
+msgstr ""
+
+#: src/saver.php:93
 #, php-format
 msgid "User trait changed from %1$s to %2$s."
 msgstr ""
 
-#: src/renderer.php:35
+#: src/renderer.php:34
 msgid "Your Comment"
 msgstr ""
