@@ -4,13 +4,12 @@ jQuery( document ).on( "click", ".calisia-delete-customer-note-button", function
         return;
     }
     
-    $.ajax({
+    jQuery.ajax({
         url: "admin-ajax.php", // this is the object instantiated in wp_localize_script function
         type: 'POST',
         data:{ 
             action: 'calisia_delete_note', // this is the function in your functions.php that will be triggered
-            id: this.dataset.id,
-            age: '38'
+            id: this.dataset.id
         },
         success: function( data ){
             //Do something with the result from server
