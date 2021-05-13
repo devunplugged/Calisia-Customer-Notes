@@ -4,8 +4,8 @@ jQuery( document ).on( "click", ".calisia-delete-customer-note-button", function
         return;
     }
 
-    let calisia_nonce = jQuery( "#calisia-nonce" ).val();
-    let calisia_user_id = jQuery( "#calisia-user-id" ).val();
+    let calisia_nonce = jQuery( "#calisia-cutomer-note-nonce" ).val();
+    let calisia_user_id = jQuery( "#calisia-cutomer-note-user-id" ).val();
 
     jQuery.ajax({
         url: "admin-ajax.php", // this is the object instantiated in wp_localize_script function
