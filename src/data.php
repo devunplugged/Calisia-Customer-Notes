@@ -7,7 +7,7 @@ class data{
 
         return $wpdb->get_results(
             $wpdb->prepare(
-            "SELECT * FROM ".$wpdb->prefix."calisia_customer_notes WHERE user_id = %d AND deleted = 0",
+            "SELECT * FROM ".$wpdb->prefix."calisia_customer_notes WHERE user_id = %d AND deleted = 0 ORDER BY id DESC",
             array(
                 $user_id
                )

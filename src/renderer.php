@@ -40,7 +40,7 @@ class renderer{
         self::render($template, array("textarea_input"=>$textarea));
     }
 
-    public static function render_customer_form($user_id, $notes, $user){
+    public static function render_customer_form($user_id, $notes, $nonce){
 
         if($user_id == 0){
             self::render('user-deleted');
@@ -52,7 +52,8 @@ class renderer{
             'user-notes',
             array(
                 'notes' => $notes,
-                'user' => $user
+                'nonce' => $nonce,
+                'user_id' => $user_id
             )
         );
         self::render_note_textarea($user_id, 'user-notes-textarea');

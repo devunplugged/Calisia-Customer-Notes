@@ -18,13 +18,14 @@ class forms{
         global $post;
         $order = new \WC_Order($post->ID);
         $user_id = $order->get_customer_id();
+        
         self::customer_notes_form($user_id);
     }
 
     public static function customer_notes_form($user_id){
-        $user = get_user_by( 'id', $user_id );
+        //$user = get_user_by( 'id', $user_id );
         $notes = data::get_customer_notes($user_id);
-
-        renderer::render_customer_form($user_id, $notes, $user);
+        $nonce = wp_create_nonce( 'calisia_delete_user_note_' . $user_id );
+        renderer::render_customer_form($user_id, $notes, $nonce);
     }
 }

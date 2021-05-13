@@ -3,6 +3,12 @@ namespace calisia_customer_notes;
 
 class ajax{
     public static function delete_note(){
+
+        if(!wp_verify_nonce( $_POST['calisia_nonce'], 'calisia_delete_user_note_' . $_POST['user_id'] )){
+            echo json_encode(array('result'=>0, 'id'=>$_POST['id']));
+            wp_die();
+        }
+
         global $wpdb;
         $result = $wpdb->update( $wpdb->prefix . 'calisia_customer_notes', array( 'deleted' => 1 ), array( 'id' => $_POST['id'] ), array( '%d' ), array( '%d' ) );
       /*  $result = $wpdb->delete(

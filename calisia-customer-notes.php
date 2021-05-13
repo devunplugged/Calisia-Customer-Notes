@@ -41,7 +41,7 @@ add_action('admin_enqueue_scripts', 'calisia_customer_notes\loader::load_css');
 add_action('admin_enqueue_scripts', 'calisia_customer_notes\loader::load_js' );
 
 //ajax endpoint (delete note)
-add_action( "wp_ajax_calisia_delete_note", 'calisia_customer_notes\ajax::delete_note' ); //ajax call endpoint
+add_action( "wp_ajax_calisia_delete_user_note", 'calisia_customer_notes\ajax::delete_note' ); //ajax call endpoint
 
 //load plugin textdomain
 add_action( 'init', 'calisia_customer_notes\translations::load_textdomain' );
