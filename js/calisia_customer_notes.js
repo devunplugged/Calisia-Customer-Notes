@@ -18,6 +18,7 @@ jQuery( document ).on( "click", ".calisia-delete-customer-note-button", function
         },
         success: function( data ){
             //Do something with the result from server
+            console.log(data);
             data = JSON.parse(data);
             if(data.result == 0){
                 alert("Błąd podczas usuwania notatki.");

@@ -14,6 +14,7 @@ require_once __DIR__ . '/src/data.php';
 require_once __DIR__ . '/src/forms.php';
 require_once __DIR__ . '/src/translations.php';
 require_once __DIR__ . '/src/inputs.php';
+require_once __DIR__ . '/src/shortcodes.php';
 
 //add form to user profile page
 //add_action( 'show_user_profile', array($calisia_customer_notes, 'add_customer_notes_form'), 20); //when editing own profile
@@ -45,3 +46,6 @@ add_action( "wp_ajax_calisia_delete_user_note", 'calisia_customer_notes\ajax::de
 
 //load plugin textdomain
 add_action( 'init', 'calisia_customer_notes\translations::load_textdomain' );
+
+//add shortcode to display customer notes anywhere
+add_action( 'init', 'calisia_customer_notes\shortcodes::add_shortcode' );
