@@ -86,9 +86,14 @@ class saver{
     /**
      * saves user trait: positive, neutral, negative
      */
-    public static function save_user_trait($user_id, $meta, $value){      
+    public static function save_user_trait($user_id, $meta, $value){   
+        //dont save if current is empty and new is neutral; means no change from default
+        if(empty($current_user_trait) && $value=='neutral')  {
+            return;
+        }
+
         $current_user_trait = get_user_meta( $user_id, $meta, true) ;
-        if($current_user_trait != $value){
+        if($current_user_trait != $value){ 
             $content = sprintf(
                 __( 'User trait changed from %1$s to %2$s.', 'calisia-customer-notes' ),
                 data::get_trait_name($current_user_trait)['name'],
