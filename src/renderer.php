@@ -1,6 +1,10 @@
 <?php
 namespace calisia_customer_notes;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit();
+}
+
 class renderer{
     public static function render($template, $args = array()){
         include  __DIR__ . '/../templates/'.$template.'.php';

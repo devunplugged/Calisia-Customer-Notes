@@ -1,6 +1,10 @@
 <?php
 namespace calisia_customer_notes;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit();
+}
+
 class data{
     public static function get_customer_notes($user_id){
         global $wpdb;

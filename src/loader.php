@@ -1,6 +1,10 @@
 <?php
 namespace calisia_customer_notes;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit();
+}
+
 class loader{
     public static function load_css(){
         wp_enqueue_style('calisia_customer_notes_css', plugins_url('../css/calisia_customer_notes.css',__FILE__ ));

@@ -1,6 +1,10 @@
 <?php
 namespace calisia_customer_notes;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit();
+}
+
 class inputs{
     public static function select($options, $output = false){
         $select = '<label>'.$options['label'].'</label>';

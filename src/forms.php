@@ -1,6 +1,10 @@
 <?php
 namespace calisia_customer_notes;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit();
+}
+
 class forms{
     public static function add_meta_boxes(){
         add_meta_box( 'calisia-customer-notes', __('Notes: Customer','calisia-customer-notes'), 'calisia_customer_notes\forms::metabox_form', 'shop_order', 'side', 'core' );

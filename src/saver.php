@@ -1,6 +1,10 @@
 <?php
 namespace calisia_customer_notes;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit();
+}
+
 class saver{
     public static function save_user_desc_from_order_page(){
         if($_POST['_calisia_user_desc'] == '')

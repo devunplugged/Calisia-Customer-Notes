@@ -1,6 +1,10 @@
 <?php
 namespace calisia_customer_notes;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit();
+}
+
 class shortcodes{
     public static function add_shortcode(){
         add_shortcode( 'calisia_customer_notes', 'calisia_customer_notes\shortcodes::show_notes' );
